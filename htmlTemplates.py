@@ -85,37 +85,6 @@ class ChatUI:
        '''
 
     resume4show = """
-    Benson (Ping Hsien) Yang\n
-
-    EXPERIENCE
-    Data Analyst - Intern\n
-    Northwell Health | New Hyde Park, NY
-    
-    February 2024 - Present
-    
-    • Led the deployment of advanced SQL stored procedures and PowerBI tools, automating data integrity checks that enhanced healthcare
-    data accuracy by 50%, minimized manual errors, and boosted efficiency, supporting informed decision-making across the organization.
-    
-    • Instrumental in developing automated data quality management solutions within the data governance framework, significantly reducing
-    risks and enhancing compliance.
-    
-    Market Analyst | Python, SQL\n
-    ARCADIA MOTOR CO., LTD. | Taipei, Taiwan
-
-
-    June 2020 - August 2021
-
-    •	Extracted key metrics from SQL databasesPerformed advanced analysis using Python, leading to the identification of emerging market trends and insights into user behavior, resulting in a 15% increase in marketing efficiency\n
-    •	Work closely with cross-functional teams, including sales, product, and technology teams, to ensure accuracy and viability of market insights and make data-based strategic recommendations to drive business growth.
-
-    Software Engineer | VB, Javascript, MYSQL\n
-    ChainSea Information Integration Co., Ltd | Taipei, Taiwan
-
-    September 2018 - September 2019
-
-    •	Performed proactive and ad-hoc product analyses to identify key customer needs and create cyber security through new product features.\n
-    •	Reviewed, modified, and implemented A/B tests for unit and integration assessments to enhance the Bank's software quality and reliability.
-
     EDUCATION
 
     August 2022 - May 2024
@@ -148,6 +117,39 @@ class ChatUI:
     Machine Learning Models: Linear/Logistic Regression, Decision Trees, Random Forest, Extra Trees, k-Means Clusters, K-Nearest Neighbors, Neural Networks ( LSTM, CNNs ), NLP model\n
 
     """
+    resume_exp = {
+        "Experience": [
+            {
+                "title": "Data Analyst - Intern",
+                "company": "Northwell Health | New Hyde Park, NY",
+                "dates": "February 2024 - Present",
+                "details": [
+                    "•	Extracted key metrics from SQL databasesPerformed advanced analysis using Python, leading to the identification of emerging market trends and insights into user behavior, resulting in a 15% increase in marketing efficiency",
+                    "• Instrumental in developing automated data quality management solutions within the data governance framework, significantly reducing risks and enhancing compliance."
+                ]
+            },
+            {
+                "title": "Market Analyst",
+                "company": "ARCADIA MOTOR CO., LTD. | Taipei, Taiwan",
+                "dates": "June 2020 – August 2021",
+                "details": [
+                    "•	Extracted key metrics from SQL databasesPerformed advanced analysis using Python, leading to the identification of emerging market trends and insights into user behavior, resulting in a 15% increase in marketing efficiency",
+                    " •	Work closely with cross-functional teams, including sales, product, and technology teams, to ensure accuracy and viability of market insights and make data-based strategic recommendations to drive business growth."
+                ]
+            },
+            {
+                "title": "Software Engineer",
+                "company": "Taiwanese Bank - Chainsea | Taipei, Taiwan",
+                "dates": "January 2019 – May 2020",
+                "details": [
+                    "•	Performed proactive and ad-hoc product analyses to identify key customer needs and create cyber security through new product features.",
+                    "•	Reviewed, modified, and implemented A/B tests for unit and integration assessments to enhance the Bank's software quality and reliability."
+                ]
+            }
+        ]
+    }
+
+
 
     resume4gpt = """
         Benson (Ping Hsien) Yang\n
@@ -216,8 +218,8 @@ class ChatUI:
     
    I have 3 years of experience in the Data science and software develop .
 
-My background in data analysis and expertise with tools like Excel, SQL, PowerBI, and Tableau qualify me for Data Visualization projects. 
-
-At Northwell Health and Aracadia Motor Co., I created visualizations that enhanced decision-making and significantly boosted marketing effectiveness. My skills, honed through real-world applications and advanced education, enable me to transform complex data into clear, impactful visual stories.
-    """
+    My background in data analysis and expertise with tools like Excel, SQL, PowerBI, and Tableau qualify me for Data Visualization projects. 
+    
+    At Northwell Health and Aracadia Motor Co., I created visualizations that enhanced decision-making and significantly boosted marketing effectiveness. My skills, honed through real-world applications and advanced education, enable me to transform complex data into clear, impactful visual stories.
+        """
 

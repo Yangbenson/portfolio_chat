@@ -1,5 +1,6 @@
 from io import BytesIO
 import os
+import pandas as pd
 import streamlit as st
 from streamlit_js_eval import streamlit_js_eval, get_geolocation
 from dotenv import load_dotenv
@@ -12,7 +13,11 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import ChatUI
 from langchain.llms import HuggingFaceHub
-from get_restaurant import *
+from st_aggrid import AgGrid
+from st_aggrid.grid_options_builder import GridOptionsBuilder
+
+
+
 
 
 def get_pdf_text(pdf_docs):
@@ -69,6 +74,9 @@ def handle_userinput(user_question):
             st.write(ChatUI.bot_template.replace(
                 "{{MSG}}", message.content), unsafe_allow_html=True)
 
+def collapsible_section(title, content):
+    with st.expander(title, expanded=False):
+        st.write(content)
 
 def main():
     # load_dotenv()
@@ -111,8 +119,25 @@ def main():
         st.markdown('<h1 style="font-size:2em;">Ping Hsien Yang\'s Resume</h1>', unsafe_allow_html=True)
         st.sidebar.markdown("[Download Resume](https://drive.google.com/file/d/1j-BvvDxjOrhxorORx71gGJv_fW950zBG/view)")
 
-        with st.expander("Expand Resume", expanded=True):
-            st.write(ChatUI.resume4gpt)
+        for exp in ChatUI.resume_exp["Experience"]:
+            title = f"{exp['title']} | {exp['company']} | {exp['dates']}"
+            details = "\n".join([f"- {item}" for item in exp['details']])
+            collapsible_section(title, details)
+
+
+        with st.expander("Education & Project", expanded=True):
+            st.write(ChatUI.resume4show)
+        # Additional interactivity (using AgGrid for example)
+        # st.sidebar.markdown("### Skills and Proficiencies")
+        # skills_data = {
+        #     "Skill": ["Python", "SQL", "Java", "Data Analysis", "Machine Learning"],
+        #     "Proficiency": [95, 85, 80, 90, 75]
+        # }
+        # gd = GridOptionsBuilder.from_dataframe(pd.DataFrame(skills_data))
+        # gd.configure_default_column(editable=True, groupable=True)
+        # gd.configure_selection(selection_mode="single", use_checkbox=True)
+        # grid_options = gd.build()
+        # AgGrid(pd.DataFrame(skills_data), gridOptions=grid_options, height=200)
 
         # get the text chunks
         text_chunks = get_text_chunks(ChatUI.resume4gpt)
