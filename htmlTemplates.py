@@ -39,7 +39,7 @@ class ChatUI:
     user_template = '''
     <div class="chat-message user">
         <div class="avatar">
-            <img src="https://i.ibb.co/19KhnRd/guest.png">
+            <img src="https://i.ibb.co/WgYKg1Q/guest.png">
         </div>    
         <div class="message">{{MSG}}</div>
     </div>
