@@ -140,7 +140,7 @@ def main():
             collapsible_section(title, details)
 
 
-        with st.expander("Education & Project", expanded=True):
+        with st.expander("Education & Project", expanded=False):
             st.write(ChatUI.resume4show)
         # Additional interactivity (using AgGrid for example)
         # st.sidebar.markdown("### Skills and Proficiencies")
