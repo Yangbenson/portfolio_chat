@@ -1,7 +1,9 @@
 from io import BytesIO
 import os
-import pandas as pd
 import streamlit as st
+from streamlit_extras.metric_cards import style_metric_cards
+from streamlit_extras.bottom_container import bottom
+from streamlit_extras.colored_header import colored_header
 from streamlit_js_eval import streamlit_js_eval, get_geolocation
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
@@ -79,6 +81,7 @@ def collapsible_section(title, content):
         st.write(content)
 
 def main():
+
     # load_dotenv()
     st.set_page_config(page_title="Ping Hsien Yang's Portfolio",
                        page_icon="https://i.ibb.co/XXrhT5P/protraitt.jpg")
@@ -89,12 +92,24 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Chat with Ping's Resume👨‍💻")
+    # st.header("Chat with Ping's Resume👨‍💻")
+    colored_header(
+        label="Chat with Ping's Resume👨‍💻",
+        description="",
+        color_name="violet-70",
+    )
     st.markdown('<span style="font-size:12px"><i>This Chat engine by GPT-3.5</span>', unsafe_allow_html=True)
     user_question = st.text_input(""" Ask Ping Hsien Yang's resume if he can be a unicorn whispering, cookie tasting, or data analyst? 🦄🍪👨‍🔧""")
 
     if user_question:
         handle_userinput(user_question)
+
+    with bottom():
+
+        col1, col2 = st.columns(2)
+        col1.metric(label="GitHub", value="https://github.com/Yangbenson", delta=1000)
+        col2.metric(label="LinkedIn", value="https://www.linkedin.com/in/yangbenson/", delta=1000)
+        style_metric_cards()
 
     with st.sidebar:
 
@@ -149,6 +164,7 @@ def main():
         st.session_state.conversation = get_conversation_chain(
             vectorstore)
         # print(get_conversation_chain(vectorstore))
+
 
 
 if __name__ == '__main__':
