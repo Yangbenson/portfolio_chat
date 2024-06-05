@@ -104,12 +104,12 @@ def main():
     if user_question:
         handle_userinput(user_question)
 
-    with bottom():
-
-        col1, col2 = st.columns(2)
-        col1.metric(label="GitHub", value="https://github.com/Yangbenson", delta=1000)
-        col2.metric(label="LinkedIn", value="https://www.linkedin.com/in/yangbenson/", delta=1000)
-        style_metric_cards()
+    # with bottom():
+    #
+    #     col1, col2 = st.columns(2)
+    #     col1.metric(label="GitHub", value="https://github.com/Yangbenson", delta=1000)
+    #     col2.metric(label="LinkedIn", value="https://www.linkedin.com/in/yangbenson/", delta=1000)
+    #     style_metric_cards()
 
     with st.sidebar:
 
