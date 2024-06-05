@@ -88,7 +88,17 @@ class ChatUI:
     Benson (Ping Hsien) Yang\n
 
     EXPERIENCE
-
+    Data Analyst - Intern\n
+    Northwell Health | New Hyde Park, NY
+    
+    February 2024 - Present
+    
+    • Led the deployment of advanced SQL stored procedures and PowerBI tools, automating data integrity checks that enhanced healthcare
+    data accuracy by 50%, minimized manual errors, and boosted efficiency, supporting informed decision-making across the organization.
+    
+    • Instrumental in developing automated data quality management solutions within the data governance framework, significantly reducing
+    risks and enhancing compliance.
+    
     Market Analyst | Python, SQL\n
     ARCADIA MOTOR CO., LTD. | Taipei, Taiwan
 
@@ -140,15 +150,20 @@ class ChatUI:
     """
 
     resume4gpt = """
-    Benson (Ping Hsien) Yang\n
+        Benson (Ping Hsien) Yang\n
 
-    Personal Link\n
-
-    linkedin : https://www.linkedin.com/in/pinghsien-yang/
-    GitHub : https://github.com/Yangbenson
-    
     EXPERIENCE
-
+    Data Analyst - Intern\n
+    Northwell Health | New Hyde Park, NY
+    
+    February 2024 - Present
+    
+    • Led the deployment of advanced SQL stored procedures and PowerBI tools, automating data integrity checks that enhanced healthcare
+    data accuracy by 50%, minimized manual errors, and boosted efficiency, supporting informed decision-making across the organization.
+    
+    • Instrumental in developing automated data quality management solutions within the data governance framework, significantly reducing
+    risks and enhancing compliance.
+    
     Market Analyst | Python, SQL\n
     ARCADIA MOTOR CO., LTD. | Taipei, Taiwan
 
@@ -180,7 +195,7 @@ class ChatUI:
     National Taipei University of Business | Taipei, Taiwan
 
     PROJECTS
-    
+
     Quantium Virtual Project from Forage| R, Tableau	August 2023 - August 2023\n
     Conducted advanced data analysis on transaction and purchase behavior data. Utilized tools Tableau and R for data visualization, statistical modeling, and data processing, producing clear and concise reports for Quantium.\n
 
@@ -190,22 +205,19 @@ class ChatUI:
     E-commercial Website Scraping and Analysis | Python, MySQL	August 2022 - November 2022\n
     Used Python to collect data on the website and inserted it into a database built on the AWS EC2 server, analyzed each dataset's correlation, and visualized it in several charts. Finally, used LSTM Neural Networks to predict the market.
 
-    
-
     KEY SKILLS
 
     Software / Programming: Python, R, Matlab, Swift, EXCEL\n
     Data Stack: SQL, Tableau, GCP, AWS\n
     Python Packages: Pandas, NumPy, Matplotlib, scikit-learn, Tensorflow, GPT\n
     Machine Learning Models: Linear/Logistic Regression, Decision Trees, Random Forest, Extra Trees, k-Means Clusters, K-Nearest Neighbors, Neural Networks ( LSTM, CNNs ), NLP model\n
-
+    
     Background:
     
-    As an international student majoring in Data Analytics with hands-on experience in Python, R, and SQL, I have developed a deep appreciation for leveraging data to drive business decisions. Additionally, I gained real-time finance program experience while working at a bank software development company in Taiwan.
-    My passion for critical thinking and technical proficiency make me a strong candidate for this role.
-    
-    During my master's academic years, I have been actively involved in various data analytics projects that required technical know-how and a keen understanding of business dynamics. These experiences have sharpened my ability to translate complex data into actionable insights.
-    
-    I have uploaded my projects on GitHub, which is linked on my resume for everyone's review.
+   I have 3 years of experience in the Data science and software develop .
+
+My background in data analysis and expertise with tools like Excel, SQL, PowerBI, and Tableau qualify me for Data Visualization projects. 
+
+At Northwell Health and Aracadia Motor Co., I created visualizations that enhanced decision-making and significantly boosted marketing effectiveness. My skills, honed through real-world applications and advanced education, enable me to transform complex data into clear, impactful visual stories.
     """
 
